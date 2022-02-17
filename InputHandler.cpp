@@ -127,3 +127,11 @@ bool InputHandler::isKeyDown(SDL_Scancode key)
 	return false;
 }
 
+void InputHandler::reset()
+{
+	for (int i = 0; i < 3; i++)
+	{
+		m_mouseButtonStates.push_back(false);
+	}
+}
+

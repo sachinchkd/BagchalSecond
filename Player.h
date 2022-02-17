@@ -12,8 +12,9 @@ public:
 	Player(const LoaderParams* pParams);
 
 	void draw();
-	void update();
+	void handleInput();
 	void clean();
+	void update();
 };
 
 #endif // __Player__

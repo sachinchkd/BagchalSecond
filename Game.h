@@ -13,6 +13,36 @@
 
 class Game
 {
+public:
+
+	//instance function to make this class a singleton
+	static Game* Instance()
+	{
+		if (s_pInstance == 0)
+		{
+			s_pInstance = new Game();
+			return s_pInstance;
+		}
+		return s_pInstance;
+	}
+
+	//function to return SDL_Renderer object
+	SDL_Renderer* getRenderer() const { return m_pRenderer; }
+
+	//function that allows access to state machine
+	GameStateMachine* getStateMachine() { return m_pGameStateMachine; }
+
+	bool init(const char* title, int xpos, int ypos, int height, int width, bool fullscreen);
+
+	bool running() { return m_bRunning; }
+
+	void handleEvents();
+	void update();
+	void render();
+	void clean();
+
+	void quit() { m_bRunning = false; }
+private:
 	SDL_Window* m_pWindow;
 	SDL_Renderer* m_pRenderer;
 
@@ -33,35 +63,7 @@ class Game
 	//add an object of our GameStateMachine
 	GameStateMachine* m_pGameStateMachine;
 
-public:
 
-	//instance function to make this class a singleton
-	static Game* Instance()
-	{
-		if (s_pInstance == 0)
-		{
-			s_pInstance = new Game();
-			return s_pInstance;
-		}
-		return s_pInstance;
-	}
-
-	//function to return SDL_Renderer object
-	SDL_Renderer* getRenderer() const { return m_pRenderer; }
-
-	//function that allows access to state machine
-	GameStateMachine* getStateMachine();
-
-	bool init(const char* title, int xpos, int ypos, int height, int width, bool fullscreen);
-
-	bool running() { return m_bRunning; }
-
-	void handleEvents();
-	void update();
-	void render();
-	void clean();
-
-	void quit() {  m_bRunning = false; }
 
 };
 

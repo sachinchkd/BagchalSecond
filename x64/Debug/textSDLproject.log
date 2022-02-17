@@ -1,2 +1,10 @@
-﻿  MenuState.cpp
+﻿  PlayState.cpp
+C:\Users\shaswot paudel\source\repos\textSDLproject\textSDLproject\PlayState.cpp(89,32): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+C:\Users\shaswot paudel\source\repos\textSDLproject\textSDLproject\PlayState.cpp(90,36): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+C:\Users\shaswot paudel\source\repos\textSDLproject\textSDLproject\PlayState.cpp(91,31): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+C:\Users\shaswot paudel\source\repos\textSDLproject\textSDLproject\PlayState.cpp(92,37): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+C:\Users\shaswot paudel\source\repos\textSDLproject\textSDLproject\PlayState.cpp(95,32): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+C:\Users\shaswot paudel\source\repos\textSDLproject\textSDLproject\PlayState.cpp(96,36): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+C:\Users\shaswot paudel\source\repos\textSDLproject\textSDLproject\PlayState.cpp(97,31): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+C:\Users\shaswot paudel\source\repos\textSDLproject\textSDLproject\PlayState.cpp(98,37): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
   textSDLproject.vcxproj -> C:\Users\shaswot paudel\source\repos\textSDLproject\x64\Debug\textSDLproject.exe
